@@ -21,7 +21,7 @@ impl FlashAPI {
             };
             PyCFunction::new_closure(py, None, None, g)
         };
-        PyCFunction::new_closure(py, None, None, f)
+        PyCFunction::new_closure_bound(py, None, None, f)
     }
 }
 
